@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244956732131",
+    "project_id": "last-price-app",
+    "storage_bucket": "last-price-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244956732131:android:50173698bd5233e35943d6",
+        "android_client_info": {
+          "package_name": "app.boook24.last_price"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpf57fVtQCaCCC0xEUdrrVIlb6-e6fhGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
