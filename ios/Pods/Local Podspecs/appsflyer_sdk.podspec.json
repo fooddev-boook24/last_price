@@ -1,0 +1,63 @@
+{
+  "name": "appsflyer_sdk",
+  "version": "6.17.8",
+  "summary": "AppsFlyer Integration for Flutter",
+  "description": "AppsFlyer is the market leader in mobile advertising attribution & analytics, helping marketers to pinpoint their targeting, optimize their ad spend and boost their ROI.",
+  "homepage": "https://github.com/AppsFlyerSDK/flutter_appsflyer_sdk",
+  "license": {
+    "type": "MIT",
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Appsflyer": "build@appsflyer.com"
+  },
+  "source": {
+    "git": "https://github.com/AppsFlyerSDK/flutter_appsflyer_sdk.git",
+    "tag": "6.17.8"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "requires_arc": true,
+  "static_framework": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Classes/**/*",
+      "public_header_files": "Classes/**/*.h",
+      "dependencies": {
+        "Flutter": [
+
+        ]
+      },
+      "ios": {
+        "dependencies": {
+          "AppsFlyerFramework": [
+            "6.17.8"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PurchaseConnector",
+      "dependencies": {
+        "Flutter": [
+
+        ]
+      },
+      "ios": {
+        "dependencies": {
+          "PurchaseConnector": [
+            "6.17.8"
+          ]
+        }
+      },
+      "source_files": "PurchaseConnector/**/*",
+      "public_header_files": "PurchaseConnector/**/*.h",
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) ENABLE_PURCHASE_CONNECTOR=1"
+      }
+    }
+  ]
+}
